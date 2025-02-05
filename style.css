@@ -1,0 +1,150 @@
+@font-face {
+    font-family:"Roboto";
+    font-style: normal;
+    font-weight: 900;
+    src: url("./fonts/Roboto-Black.ttf");
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src:url(./fonts/Roboto-Bold.ttf) ;
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: url(./fonts/Roboto-Medium.ttf);
+
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font: weight 700px; ;
+    src: url(./fonts/Raleway-VariableFont_wght.ttf);
+}
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+.team{
+    margin-top: 94px;
+    margin-bottom: 188px;
+}
+.list {
+    padding-top: 94px;
+}
+.logo {
+    margin-top: 24px;
+    margin-bottom: 25px;
+}
+.team-div{
+    margin-top: 50px;
+}
+.add-class{
+    margin-top: 50px;
+}
+.section-title{
+    margin-top: 30px;
+}
+.nav{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.div{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.team-title{
+    margin-top: 94px;
+}
+
+body {
+    font-family:"Roboto" ;
+
+}
+
+
+h1 {
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 44px ;
+    line-height: 1.36;
+    
+}
+button {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+.li-title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    
+}
+.li-text {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #757575;
+    
+}
+.team-title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 36px;
+    
+}
+.section-title {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    
+}
+.div-link {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+    color: #757575;
+}
+.div-link:hover {
+    color:#2196F3;
+}
+
+.nav-link {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    
+}
+.nav-link:hover {
+    color:#2196F3;
+}
+.footer-address {
+    font-style: normal;
+    color: #FFFFFF;
+    line-height: 1.7;
+}
+.section-text {
+    color: #757575;
+    line-height:1.17 ;
+}
+.title-title{
+    line-height: 1.36;
+}

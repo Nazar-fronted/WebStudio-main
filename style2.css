@@ -1,0 +1,104 @@
+@font-face {
+    font-family:"Roboto";
+    font-style: normal;
+    font-weight: 900;
+    src: url("./fonts/Roboto-Black.ttf");
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src:url(./fonts/Roboto-Bold.ttf) ;
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: url(./fonts/Roboto-Medium.ttf);
+
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font: weight 700px; ;
+    src: url(./fonts/Raleway-VariableFont_wght.ttf);
+}
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+body {
+    font-family: "Roboto" ;
+}
+
+
+.team-link {
+    
+    font-weight: 500;
+    font-size: 14px ;
+    text-decoration:none ;
+
+}
+.type-sub {
+   font-weight: 500;
+   font-size: 14px;
+   text-decoration: none;
+}
+.class-sub {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+.section-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height:2px;
+}
+.section-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #757575;
+}
+.section-img {
+    width: 370px;
+    height: 294px;
+}
+.footer-address-sub {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.address-sub {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+    color: #757575;
+    font-style: normal;
+}
+.address-sub:hover {
+    color: #2196F3;
+}
+.footer-address-sub {
+    font-style: normal;
+    color: #FFFFFF;
+}
+.team-link {
+    color: black;
+}
+.team-link:hover {
+    color: #2196F3;
+}
+.class-sub:hover {
+    background-color: #2196F3;
+}
