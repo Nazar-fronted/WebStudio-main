@@ -85,6 +85,7 @@ body {
     text-decoration: none;
     color: #757575;
     font-style: normal;
+    
 }
 .address-sub:hover {
     color: #2196F3;
@@ -95,10 +96,32 @@ body {
 }
 .team-link {
     color: black;
+    margin-right: 50px;
+    
 }
 .team-link:hover {
     color: #2196F3;
 }
 .class-sub:hover {
     background-color: #2196F3;
+}
+.flex{
+    display: flex;
+    justify-content:space-between ;
+    margin-bottom: 126px;
+    margin-top: 32px;
+    align-items: center;
+}
+.subscribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+.section-figure{
+    display: flex;
+  
+   
 }
