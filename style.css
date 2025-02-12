@@ -104,6 +104,7 @@ button {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 36px;
+
     
 }
 .section-title {
@@ -113,7 +114,7 @@ button {
     line-height: 1.17;
     
 }
-.div-link {
+.div-link-footer {
     font-family: "Roboto";
     font-weight: 500;
     font-size: 14px;
@@ -131,6 +132,7 @@ button {
     font-size: 14px;
     text-decoration: none;
     color: black;
+    ;
     
 }
 .nav-link:hover {
@@ -150,6 +152,14 @@ button {
 .title-title{
     line-height: 1.36;
 }
+.div-link{
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    color: #757575;
+
+}
 .flexelement{
     display:flex;
     justify-content: space-between;
@@ -164,21 +174,17 @@ button {
 .ul-list{
     display: flex;
     justify-content: space-between;
+    padding: 0;
     
 }
 ul{
     list-style: none;
 }
-.create{
-    display: flex;
-    align-items: center;    
-    flex-direction: column;
-   
-    
-}
+  
+
 .add-class{
     display: flex;
-    justify-content:center ;
+    justify-content:space-between ;
 
 }
 .team-title{
@@ -197,13 +203,59 @@ ul{
 }
 .title-title{
     color: #FFFFFF;
+    text-align: center;
 }
 .title-button{
-    background-color: #2196F3;
+    
+    background-color: #2196F3; 
+    color: white; 
+    border: none; 
+    padding: 10px 32px 10px 32px; 
+    font-size: 14px;  
+    border-radius: 5px; 
+    cursor: pointer; 
+    
     
 }
 footer{
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.nav-link:not(:last-child){
+    margin-right: 50px;
+}
+.div-link:not(:last-child){
+    margin-left: 344px;
+    margin-right: 50px;
+}
+.li-list{
+    width: 270px;
+}
+.team-div{
+    display: flex;
+    justify-content: space-between;
+}
+.section-figcaption{
+    text-align: center;
+}
+.section-text{
+    margin-bottom: 124px;
+}
+.section-figure{
+    margin: 0;
+}
+.logo-two{
+    margin-bottom: 20px;
+}
+.footer-address{
+    margin-bottom: 9px;
+}
+.section-team{
+    margin-top: 94px;
+}
+.section-img{
+    border-radius: 0 0 4px 0; 
+    overflow: hidden; 
+    border: 1px solid #ddd; 
 }
