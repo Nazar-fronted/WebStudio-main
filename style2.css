@@ -33,6 +33,8 @@
     width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
+
+    
 }
 
 
@@ -87,6 +89,18 @@ body {
     font-style: normal;
     
 }
+.address-sub-footer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+    color: #757575;
+    font-style: normal;
+}
+.address-sub-footer:hover{
+    color: #2196F3;
+}
+
 .address-sub:hover {
     color: #2196F3;
 }
@@ -132,4 +146,44 @@ ul{
     padding-bottom: 60px;
     padding-right: auto;
     
+}
+.class-sub{
+    background: #f5f5f5; /* Світло-сірий фон */
+    color: #333; /* Темний текст */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px; /* Закруглені кути */
+    font-size: 16px;
+    cursor: pointer;
+}
+.class-sub:hover{
+    color: #FFFFFF;
+}
+.address-sub:not(:last-child){
+    margin-left: 180px;
+
+}
+.address-sub{
+    margin-right: 50px;
+}
+.class-sub:not(:last-child){
+    margin-left: 8px;
+}
+.section-ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* подивився в інтернеті) */
+    gap: 20px; 
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+.section{
+    display: flex;
+    align-content: center;
+    margin-top: 34px;
+    margin-bottom: 94px;
+    
+}
+figcaption{
+    margin-left: 10px;
+    padding: 24px;
 }

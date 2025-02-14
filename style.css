@@ -180,6 +180,7 @@ button {
 ul{
     list-style: none;
 }
+
   
 
 .add-class{
@@ -226,7 +227,7 @@ footer{
     margin-right: 50px;
 }
 .div-link:not(:last-child){
-    margin-left: 344px;
+    margin-left: 210px;
     margin-right: 50px;
 }
 .li-list{
@@ -259,3 +260,11 @@ footer{
     overflow: hidden; 
     border: 1px solid #ddd; 
 }
+.section-team{
+    background-color:#F5F4FA;
+}
+.div-link-footer:hover{
+    color: #2196F3;
+}
+
+    
