@@ -63,9 +63,8 @@
     margin-top: 32px;
     margin-bottom: 32px;
 }
-.team-title{
-    margin-top: 94px;
-}
+
+
 
 body {
     font-family:"Roboto" ;
@@ -132,7 +131,7 @@ button {
     font-size: 14px;
     text-decoration: none;
     color: black;
-    ;
+    
     
 }
 .nav-link:hover {
@@ -241,7 +240,7 @@ footer{
     text-align: center;
 }
 .section-text{
-    margin-bottom: 124px;
+    margin-bottom: 30px;
 }
 .section-figure{
     margin: 0;
@@ -253,7 +252,8 @@ footer{
     margin-bottom: 9px;
 }
 .section-team{
-    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .section-img{
     border-radius: 0 0 4px 0; 
@@ -265,6 +265,9 @@ footer{
 }
 .div-link-footer:hover{
     color: #2196F3;
+}
+.team-title{
+    margin: 0;
 }
 
     

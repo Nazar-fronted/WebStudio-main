@@ -170,11 +170,7 @@ ul{
     margin-left: 8px;
 }
 .section-ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* подивився в інтернеті) */
-    gap: 20px; 
-    
-    margin: 0 auto; 
+    flex-basis: calc((100% - 60px)/3);
 }
 .section{
     display: flex;
