@@ -274,9 +274,31 @@ footer{
     display: flex;
     justify-content: center;
 }  
-.picture{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom:35px;
+.group::before{
+    content: url(./img/Group.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.clock::before{
+    content: url(./img/clock\ 1.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.diagram::before{
+    content: url(./img/diagram\ 1.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.astronaut::before{
+    content: url(./img/astronaut\ 1.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
 }
