@@ -282,30 +282,31 @@ footer{
     padding-bottom: 30px;
 }
 .clock::before{
-    content: url(./img/clock\ 1.png);
+    content: url(./img/clock.png);
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
 }
 .diagram::before{
-    content: url(./img/diagram\ 1.png);
+    content: url(./img/diagram.png);
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
 }
 .astronaut::before{
-    content: url(./img/astronaut\ 1.png);
+    content: url(./img/astronaut.png);
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
 }
 .section-figure{
-    box-shadow: 0.3px 2px 0.3px 0.3px rgba(0, 0, 0, 0.2); 
-    
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+    
+
 .section-figure{
     border-radius:4px;
 }
