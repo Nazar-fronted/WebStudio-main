@@ -257,7 +257,7 @@ footer{
     padding-bottom: 94px;
 }
 .section-img{
-    border-radius: 0 0 4px 0; 
+    
     overflow: hidden; 
     border: 1px solid #ddd; 
 }
@@ -301,4 +301,17 @@ footer{
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
+}
+.section-figure{
+    box-shadow: 0.3px 2px 0.3px 0.3px rgba(0, 0, 0, 0.2); 
+    
+}
+.section-figure{
+    border-radius:4px;
+}
+.biznes{
+    background: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
+                url(img/Img.png);
+    background-size: cover;
+    background-position: center;
 }
