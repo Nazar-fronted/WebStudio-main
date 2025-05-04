@@ -19,8 +19,10 @@
                 <a class="team-link" href="#">Контакти</a></li>   
         </nav>
         <address class="type">
-            <a class="address-sub" href="mailto:info@webstudio.com">info@webstudio.com</a>
-            <a class="address-sub" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="address-sub" href="mailto:info@webstudio.com"><svg class="header-svg" >
+                <use href="/src/img/icons.svg#icon-envelope"></use></svg>info@webstudio.com</a>
+            <a class="address-sub" href="tel:+380961111111"><svg class="header-svg-second">
+                <use href="/src/img/icons.svg#icon-smartphone"></use></svg >+38 096 111 11 11</a>
         </address>
     </div>
     </header>
@@ -123,13 +125,23 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
-        <img class="logo" src="./src/img/webStudio_3.png" alt="">
+        <div class="container flex-footer">        
         <address class="footer-address">
+            <img class="logo" src="./src/img/webStudio_3.png" alt="">
             <p class="footer-address-sub" >м. Київ, пр-т Лесі Українки, 26</p>
             <a class="address-sub-footer" href="melito:info@devstudio.com">info@devstudio.com</a><br>
             <a class="address-sub-footer" href="tel:+380961111111">+38 096 111 11 11</a>
         </address>
+    
+    <div class="social-links">
+        <p class="join-us">ПРИЄДНУЙТЕСЬ</p>
+        <ul class="social-icons">
+          <li><a href="#" class="icon-link"><svg class="footer-svg"><use href="/src/img/icons.svg#icon-instagram"></use></svg></a></li>
+          <li><a href="#" class="icon-link"><svg class="footer-svg"><use href="/src/img/icons.svg#icon-twitter"></use></svg></a></li>
+          <li><a href="#" class="icon-link"><svg class="footer-svg"><use href="/src/img/icons.svg#icon-facebook"></use></svg></a></li>
+          <li><a href="#" class="icon-link"><svg class="footer-svg"><use href="/src/img/icons.svg#icon-linkedin"></use></svg></a></li>
+        </ul>
+      </div>
     </div>
     </footer>
 </body>
