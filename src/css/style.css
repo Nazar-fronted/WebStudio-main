@@ -285,7 +285,7 @@ footer {
 }
 .biznes {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/src/img/Img.png);
+    url(/src/img/imagens.png);
   background-size: cover;
   background-position: center;
 }
@@ -377,7 +377,6 @@ footer {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-top: ;
   
 }
 .social-links{
