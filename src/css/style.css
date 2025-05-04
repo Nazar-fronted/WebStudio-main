@@ -249,8 +249,8 @@ footer {
   justify-content: center;
 }
 .group::before {
-  content: ;
-  background-image: url(./src/img/diagram.png);
+  content:url(/src/img/diagram.png) ;
+  
   display: flex;
   justify-content: center;
   align-items: center;
