@@ -249,7 +249,7 @@ footer {
   justify-content: center;
 }
 .group::before {
-  content:url(/src/img/diagram.png) ;
+  content:url(../img/Group.png) ;
   
   display: flex;
   justify-content: center;
@@ -257,7 +257,7 @@ footer {
   padding-bottom: 30px;
 }
 .clock::before {
-  content: url(./src/img/clock.png);
+  content: url(../img/clock.png);
   display: flex;
   justify-content: center;
   align-items: center;
