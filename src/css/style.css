@@ -249,7 +249,7 @@ footer {
   justify-content: center;
 }
 .group::before {
-  content:url(../img/Group.png) ;
+  content:url(Group.png) ;
   
   display: flex;
   justify-content: center;
@@ -257,21 +257,21 @@ footer {
   padding-bottom: 30px;
 }
 .clock::before {
-  content: url(../img/clock.png);
+  content: url(clock.png);
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
 }
 .diagram::before {
-  content: url(./src/img/diagram.png);
+  content: url(diagram.png);
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
 }
 .astronaut::before {
-  content: url(./src/img/astronaut.png);
+  content: url(astronaut.png);
   display: flex;
   justify-content: center;
   align-items: center;
