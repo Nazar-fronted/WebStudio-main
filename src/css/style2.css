@@ -2,31 +2,31 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  src: url(/src/fonts/Roboto-Black.ttf);
+  src: url(../fonts/Roboto-Black.ttf);
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url(/src/fonts/Roboto-Bold.ttf);
+  src: url(../fonts/Roboto-Bold.ttf);
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url(/src/fonts/Roboto-Medium.ttf);
+  src: url(../fonts/Roboto-Medium.ttf);
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url(/src/fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 @font-face {
   font-family: "Raleway";
   font-style: normal;
   font: weight 700px;
-  src: url(/src/fonts/Raleway-VariableFont_wght.ttf);
+  src: url(../fonts/Raleway-VariableFont_wght.ttf);
 }
 .container {
   width: 1170px;
