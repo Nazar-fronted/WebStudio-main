@@ -33,6 +33,7 @@
   padding: 0 15px;
   margin: 0 auto;
 }
+
 .team {
   margin-top: 94px;
   margin-bottom: 188px;
@@ -44,9 +45,7 @@
   margin-top: 24px;
   margin-bottom: 25px;
 }
-.team-div {
-  margin-top: 50px;
-}
+
 .add-class {
   margin-top: 50px;
 }
@@ -209,7 +208,7 @@ footer {
 .li-list {
   width: 270px;
 }
-.team-div {
+.team-ul {
   display: flex;
   justify-content: space-between;
 }
@@ -409,4 +408,30 @@ footer {
 }
 .icon-link:hover {
   background-color: #2196f3;
+}
+.team-ul{
+  padding: 0;
+  position: relative;
+  margin-top: 50px;
+}
+.team-paragraph{
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  width: 370px;
+  height: 70px;
+  opacity: 0.8;
+  background-color: #2F303A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+}
+.team-li{
+  width: 370px;
+  height: 294px;
 }
