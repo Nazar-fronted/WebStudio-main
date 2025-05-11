@@ -263,7 +263,7 @@ footer {
   padding-bottom: 30px;
 }
 .diagram::before {
-  content: ;
+  content: "";
   background-image: url(../img/diagram.png);
   display: flex;
   justify-content: center;
