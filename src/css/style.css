@@ -38,7 +38,7 @@
   margin-top: 94px;
   margin-bottom: 188px;
 }
-.list {
+.advantages {
   padding-top: 94px;
 }
 .logo {
@@ -76,12 +76,12 @@ button {
   font-weight: 700;
   font-size: 16px;
 }
-.li-title {
+.advantage-title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
 }
-.li-text {
+.advantage-text {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
@@ -153,7 +153,7 @@ button {
   flex-direction: column;
   align-items: center;
 }
-.ul-list {
+.advantages-list {
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -205,7 +205,7 @@ footer {
   margin-left: 210px;
   margin-right: 50px;
 }
-.li-list {
+.advantages-item {
   width: 270px;
 }
 .team-ul {
@@ -247,35 +247,27 @@ footer {
   display: flex;
   justify-content: center;
 }
-.group::before {
-  content:url(../img/Group.png) ;
+.advantage::before {
+  content:"";
+  background-image: url(../img/antena.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  height: 120px;
+  background-color: #F5F4FA;
   
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 30px;
 }
-.clock::before {
-  content: url(../img/clock.png);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 30px;
+.advantages-item:nth-child(2) .advantage::before {
+  background-image: url(../img/clock.png);
+  
 }
-.diagram::before {
-  content: "";
+.advantages-item:nth-child(3) .advantage::before {
   background-image: url(../img/diagram.png);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 30px;
+  
 }
-.astronaut::before {
-  content: url(../img/astronaut.png);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 30px;
+.advantages-item:nth-child(4) .advantage::before {
+  background-image: url(../img/astronaut.png);
+  
 }
 .section-figure {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
