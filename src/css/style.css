@@ -255,6 +255,7 @@ footer {
   display: block;
   height: 120px;
   background-color: #F5F4FA;
+  border-radius: 4px;
   
 }
 .advantages-item:nth-child(2) .advantage::before {
