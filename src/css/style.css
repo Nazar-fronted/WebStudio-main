@@ -405,7 +405,6 @@ footer {
 }
 .team-ul{
   padding: 0;
-  position: relative;
   margin-top: 50px;
 }
 .team-paragraph{
@@ -424,10 +423,13 @@ footer {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
+  letter-spacing: 3%;
+  font-weight: bold;
 }
 .team-li{
   width: 370px;
   height: 294px;
+  position: relative;
 }
 .modal{
   position: absolute;
