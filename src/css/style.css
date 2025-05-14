@@ -475,6 +475,7 @@ footer {
   color: #212121;
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 .form-field{
   margin-left: 40px;
@@ -506,6 +507,7 @@ footer {
   color: #757575;
   font-size: 12px;
   font-weight: 400;
+  letter-spacing: 0.01em;
   
 }
 .textarea-field{
@@ -575,7 +577,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height:60px;
 
 
 }
@@ -589,4 +591,15 @@ footer {
   letter-spacing: 0.06em;
   font-family: "Roboto";
   font-weight: bold;
+   cursor: pointer;
+  
+}
+.button-form:hover{
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15)
+}
+.form-field-item:focus-within{
+  border-color: #2196f3;
+}
+.form-field-item:hover .form-field-svg {
+  fill: #2196f3;
 }
