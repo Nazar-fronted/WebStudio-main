@@ -52,17 +52,22 @@ body {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 .section-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2px;
+  letter-spacing: 0.03em;
+  
 }
 .section-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
   color: #757575;
+  letter-spacing: 0.03em;
+  
 }
 .section-img {
   width: 100%;
@@ -159,6 +164,7 @@ ul {
 }
 .section-li {
   flex-basis: calc((100% - 60px) / 3);
+ 
 }
 .section {
   display: flex;
@@ -207,10 +213,10 @@ figure.section-figure {
     display: flex;
     margin: 0;
     padding: 0;
-    
+    margin-top: 20px; 
   }
   .social-links{
-    margin-left: 70px;
+    margin-left: 67px;
   }
   .footer-svg{
     width: 20px;
@@ -222,6 +228,8 @@ figure.section-figure {
     font-weight: 700;
     font-family: "Roboto";
     color: #ffffff;
+    margin: 0;
+    margin-top: 5px;
    
   }
   .icon-link{
@@ -233,6 +241,7 @@ figure.section-figure {
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
     margin-right: 10px;
+    
   }
   .icon-link:hover {
     background-color: #2196f3;
@@ -251,4 +260,59 @@ figure.section-figure {
     color: #2196f3;
     fill: #2196f3;
   }
+  .subscribe-us {
+  font-weight: 700;
+  font-family: "Roboto";
+  color: #ffffff;
+  letter-spacing: 0.03em;
+}
+.subscribe-svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  margin-right: 17px;
+}
+.subscribe-button {
+  background-color: #2196f3;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  font-family: "Roboto";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-left: 28px;
+}
+.form-subscribe{
+  margin-left: 93px;
+  margin-top: 5px;
+}
+.subscribe{
+  display: flex;
+  margin-top: 20px;
   
+}
+.subscribe-field-input{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+.subscribe-input{
+  width: 328px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #ffffff;
+}

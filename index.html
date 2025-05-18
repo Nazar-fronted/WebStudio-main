@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Studio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./src/css/style.css" />
 </head>
 
@@ -35,12 +37,12 @@
           ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br />
           ВАШОГО БІЗНЕСУ
         </h1>
-        <button class="title-button" type="button" data-open_modal>Замовити послугу</button>
+        <button class="title-button" type="button" data-modal-open>Замовити послугу</button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-          <svg class="close-button"  data-close_modal>
-            <use  href="./src/img/secondicons.svg#icon-close"></use>
-          </svg> 
+            <svg class="close-button" data-modal-close>
+              <use href="./src/img/secondicons.svg#icon-close"></use>
+            </svg>
             <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
             <div class="form-field">
               <label for="input" class="input-form">Ім'я</label>
@@ -64,27 +66,25 @@
                 </svg>
                 <input class="input" id="input" type="text">
               </div>
-              <label class="input-form" for="">Коментар</label>
+              <label class="input-form" for="textarea">Коментар</label>
               <div class="textarea-field">
-              <textarea class="textarea" placeholder="Введіть текст">
-                
-              </textarea>
+                <textarea placeholder="Введіть текст" id="textarea" class="textarea"></textarea>
               </div>
               <div class="checkbox-field">
-              <div class="div-checkbox">
-               <input class="checkbox-input" type="checkbox" id="checkbox-field" /> 
-               <label for="checkbox-field" class="checkbox-paragraph">Погоджуюся з розсилкою та приймаю</label>
-               <a class="checkbox-link" href="">Умови договору</a>
-              </div>
-              
+                <div class="div-checkbox">
+                  <input class="checkbox-input" type="checkbox" id="checkbox-field" />
+                  <label for="checkbox-field" class="checkbox-paragraph">Погоджуюся з розсилкою та приймаю</label>
+                  <a class="checkbox-link" href="">Умови договору</a>
+                </div>
+
               </div>
               <div class="button-field">
                 <button class="button-form" type="submit">Відправити</button>
+              </div>
             </div>
+            <script src="./src/js/index.js"></script>
           </div>
-          <script src="./src/js/index.js"></script>
-      </div>
-      
+
     </section>
     <section class="advantages">
       <div class="container">
@@ -131,20 +131,20 @@
     <section class="team">
       <div class="container ">
         <h2 class="team-title">Чим ми займаємося</h2>
-          <ul class="team-ul">
-            <li class="team-li">
-              <img class="div-img" src="./src/img/img_12.png" width="370" height="294" alt="" />
-              <p class="team-paragraph" >Десктопні додатки</p>
-            </li>
-            <li class="team-li">
-              <img class="div-img" src="./src/img/img_13.png" width="370" height="294" alt="" />
-              <p class="team-paragraph">Мобільні додатки</p>
-            </li>
-            <li class="team-li">
-              <img class="div-img" src="./src/img/img_14.png" width="370" height="294" alt="" />
-              <p class="team-paragraph">Дизайнерські рішення</p>
-            </li>
-          </ul>
+        <ul class="team-ul">
+          <li class="team-li">
+            <img class="div-img" src="./src/img/img_12.png" width="370" height="294" alt="" />
+            <p class="team-paragraph">Десктопні додатки</p>
+          </li>
+          <li class="team-li">
+            <img class="div-img" src="./src/img/img_13.png" width="370" height="294" alt="" />
+            <p class="team-paragraph">Мобільні додатки</p>
+          </li>
+          <li class="team-li">
+            <img class="div-img" src="./src/img/img_14.png" width="370" height="294" alt="" />
+            <p class="team-paragraph">Дизайнерські рішення</p>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -369,6 +369,26 @@
               </svg></a></li>
         </ul>
       </div>
+      <div class="form-subscribe">
+        <label for="subscribe-input" class="subscribe-us">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</label>
+        <div class="subscribe">
+          <div class="subscribe-field-input">
+            <input id="subscribe-input" class="subscribe-input" placeholder="E-mail" type="email" required>
+          </div>
+          <button class="subscribe-button">
+            Підписатися
+            <svg class="subscribe-svg">
+              <use href="./src/img/secondicons.svg#icon-iconsend"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
     </div>
     </div>
   </footer>
