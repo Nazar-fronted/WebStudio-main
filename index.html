@@ -39,32 +39,34 @@
         </h1>
         <button class="title-button" type="button" data-modal-open>Замовити послугу</button>
         <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <svg class="close-button" data-modal-close>
+          <form class="modal">
+            <button data-modal-close>
+            <svg class="close-button">
               <use href="./src/img/secondicons.svg#icon-close"></use>
             </svg>
+            </button>
             <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
             <div class="form-field">
-              <label for="input" class="input-form">Ім'я</label>
+              <label for="name" class="input-form">Ім'я</label>
               <div class="form-field-item">
                 <svg class="form-field-svg">
                   <use href="./src/img/secondicons.svg#icon-person"></use>
                 </svg>
-                <input class="input" id="input" type="text">
+                <input class="input" id="name" type="text">
               </div>
-              <label for="input" class="input-form">Телефон</label>
+              <label for="tel" class="input-form">Телефон</label>
               <div class="form-field-item">
                 <svg class="form-field-svg">
                   <use href="./src/img/secondicons.svg#icon-phone"></use>
                 </svg>
-                <input class="input" id="input" type="text">
+                <input class="input" id="tel" type="tel">
               </div>
-              <label for="input" class="input-form">Пошта</label>
+              <label for="email" class="input-form">Пошта</label>
               <div class="form-field-item">
                 <svg class="form-field-svg">
                   <use href="./src/img/secondicons.svg#icon-email"></use>
                 </svg>
-                <input class="input" id="input" type="text">
+                <input class="input" id="email" type="email">
               </div>
               <label class="input-form" for="textarea">Коментар</label>
               <div class="textarea-field">
@@ -83,7 +85,7 @@
               </div>
             </div>
             <script src="./src/js/index.js"></script>
-          </div>
+          </form>
 
     </section>
     <section class="advantages">

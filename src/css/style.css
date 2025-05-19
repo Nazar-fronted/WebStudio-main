@@ -607,6 +607,12 @@ footer {
 .form-field-item:hover .form-field-svg {
   fill: #2196f3;
 }
+.form-field-item:hover {
+  border-color: #2196f3;
+}
+.form-field-item:focus-within .form-field-svg {
+  fill: #2196f3;
+}
 
 .subscribe-us {
   font-weight: 700;
