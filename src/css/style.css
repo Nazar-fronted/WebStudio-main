@@ -586,6 +586,10 @@ footer {
   align-items: center;
   height: 60px;
 }
+.button-close-modal{
+  border: none;
+  appearance: none;
+}
 .button-form {
   width: 200px;
   height: 50px;
