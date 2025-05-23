@@ -13,7 +13,7 @@
 @font-face {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500px;
+  font-weight: 500;
   src: url(../fonts/Roboto-Medium.ttf);
 }
 @font-face {
@@ -45,7 +45,10 @@
   margin-top: 24px;
   margin-bottom: 25px;
 }
-
+header{
+  max-height: 80px;
+  
+}
 .add-class {
   margin-top: 50px;
 }
@@ -153,6 +156,8 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  
 }
 .biznes {
   display: flex;
@@ -672,4 +677,36 @@ footer {
   outline: none;
   background-color: transparent;
   color: #ffffff;
+}
+.nav-link{
+  position: relative;
+  
+}
+.nav-link:nth-child(1)::after {
+  content: "";
+  width: 48px;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  position: absolute;
+  left: -2px;
+  bottom: -29px;
+  opacity: 1;
+  
+}
+.nav-link:nth-child(1){
+  color: #2196f3;
+}
+.nav-link:hover:not(:nth-child(1))::after{
+  content: "";
+  width: 48px;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  width: 100%;
+
+  
 }

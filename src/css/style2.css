@@ -57,9 +57,7 @@ body {
 .section-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 2px;
   letter-spacing: 0.03em;
-  
 }
 .section-text {
   font-weight: 400;
@@ -67,7 +65,6 @@ body {
   line-height: 1.8;
   color: #757575;
   letter-spacing: 0.03em;
-  
 }
 .section-img {
   width: 100%;
@@ -146,7 +143,7 @@ ul {
   color: #333;
   border: none;
   padding: 10px 20px;
-  border-radius: 8px; 
+  border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
 }
@@ -164,7 +161,6 @@ ul {
 }
 .section-li {
   flex-basis: calc((100% - 60px) / 3);
- 
 }
 .section {
   display: flex;
@@ -172,10 +168,7 @@ ul {
   margin-top: 34px;
   margin-bottom: 94px;
 }
-figcaption {
-  margin-left: 10px;
-  padding: 24px;
-}
+
 figure.section-figure {
   margin: 0;
 }
@@ -197,70 +190,64 @@ figure.section-figure {
   padding: 0;
   gap: 30px;
 }
-.section-figcaption {
-  cursor: pointer;
+
+.flex-footer {
+  display: flex;
 }
-.flex-footer{
-    display: flex;
-   
-  }
-  .social-links {
-    display: flex; 
-    flex-direction: column;
-    
-  }
-  .social-icons{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    margin-top: 20px; 
-  }
-  .social-links{
-    margin-left: 67px;
-  }
-  .footer-svg{
-    width: 20px;
-    height: 20px;
-    fill: #ffff;
-  }
-  
-  .join-us{
-    font-weight: 700;
-    font-family: "Roboto";
-    color: #ffffff;
-    margin: 0;
-    margin-top: 5px;
-   
-  }
-  .icon-link{
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    margin-right: 10px;
-    
-  }
-  .icon-link:hover {
-    background-color: #2196f3;
-  }
-  .header-svg {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-  }
-  .header-svg-second {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-  }
-  .address-sub:hover {
-    color: #2196f3;
-    fill: #2196f3;
-  }
-  .subscribe-us {
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+.social-icons {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+.social-links {
+  margin-left: 67px;
+}
+.footer-svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffff;
+}
+
+.join-us {
+  font-weight: 700;
+  font-family: "Roboto";
+  color: #ffffff;
+  margin: 0;
+  margin-top: 5px;
+}
+.icon-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+}
+.icon-link:hover {
+  background-color: #2196f3;
+}
+.header-svg {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.header-svg-second {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+.address-sub:hover {
+  color: #2196f3;
+  fill: #2196f3;
+}
+.subscribe-us {
   font-weight: 700;
   font-family: "Roboto";
   color: #ffffff;
@@ -289,16 +276,15 @@ figure.section-figure {
   cursor: pointer;
   padding-left: 28px;
 }
-.form-subscribe{
+.form-subscribe {
   margin-left: 93px;
   margin-top: 5px;
 }
-.subscribe{
+.subscribe {
   display: flex;
   margin-top: 20px;
-  
 }
-.subscribe-field-input{
+.subscribe-field-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   width: 358px;
@@ -308,11 +294,74 @@ figure.section-figure {
   justify-content: center;
   margin-right: 12px;
 }
-.subscribe-input{
+.subscribe-input {
   width: 328px;
   height: 50px;
   border: none;
   outline: none;
   background-color: transparent;
   color: #ffffff;
+}
+.team-link {
+  position: relative;
+}
+.team-link:nth-child(2)::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  position: absolute;
+  left: 0px;
+  bottom: -29px;
+  opacity: 1;
+}
+.team-link:nth-child(2) {
+  color: #2196f3;
+}
+.team-link:hover:not(:nth-child(2))::after {
+  content: "";
+  width: 48px;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  width: 100%;
+}
+.section-figure {
+  position: relative;
+  width: 100%;
+  height: 294px;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.section-li:hover .overlay {
+  opacity: 1;
+}
+.overlay-content {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+.section-figcaption {
+  margin: 20px 24px 20px 24px;
 }
