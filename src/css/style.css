@@ -216,7 +216,7 @@ footer {
   margin-right: 50px;
 }
 .div-link:not(:last-child) {
-  margin-left: 210px;
+  margin-left: 190px;
   margin-right: 50px;
 }
 .advantages-item {
@@ -444,6 +444,7 @@ footer {
   position: fixed;
   inset: 0;
   background-color: #0000002c;
+  backdrop-filter: blur(3px);
 }
 .modal {
   position: absolute;
@@ -622,7 +623,9 @@ footer {
 .form-field-item:focus-within .form-field-svg {
   fill: #2196f3;
 }
-
+.textarea-field:focus-within {
+  border-color: #2196f3;
+}
 .subscribe-us {
   font-weight: 700;
   font-family: "Roboto";
@@ -651,6 +654,11 @@ footer {
   justify-content: space-between;
   cursor: pointer;
   padding-left: 28px;
+}
+.subscribe-button:hover {
+ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+ transition: box-shadow 0.2s;
+  
 }
 .form-subscribe {
   margin-left: 93px;
@@ -707,6 +715,8 @@ footer {
   bottom: -29px;
   left: 0;
   width: 100%;
+  transition: width 0.3s ease-in-out;
+  
 
   
 }
