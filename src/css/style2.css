@@ -34,7 +34,6 @@
   margin: 0 auto;
 }
 
-
 body {
   font-family: "Roboto";
 }
@@ -44,6 +43,9 @@ body {
   font-size: 14px;
   text-decoration: none;
   color: black;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .type-sub {
   font-weight: 500;
@@ -56,6 +58,9 @@ body {
   font-size: 16px;
   text-align: center;
   letter-spacing: 0.03em;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-title {
   font-weight: 700;
@@ -85,6 +90,9 @@ body {
   text-decoration: none;
   color: #757575;
   font-style: normal;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-sub-footer {
   font-weight: 500;
@@ -93,6 +101,9 @@ body {
   text-decoration: none;
   color: #757575;
   font-style: normal;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-sub-footer:hover {
   color: #2196f3;
@@ -114,7 +125,6 @@ body {
 .class-sub:hover {
   background-color: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: background-color  0.3s ease;
   color: #ffffff;
 }
 .flex {
@@ -163,6 +173,9 @@ ul {
 }
 .section-li {
   flex-basis: calc((100% - 60px) / 3);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section {
   display: flex;
@@ -180,7 +193,7 @@ figure.section-figure {
 }
 
 .section-figure {
-  border: 1px solid #eeeeee;
+  border: 1px solid #ffff;
 }
 
 .section-li:hover {
@@ -229,6 +242,9 @@ figure.section-figure {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   margin-right: 10px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link:hover {
   background-color: #2196f3;
@@ -258,7 +274,15 @@ figure.section-figure {
   height: 24px;
   fill: #ffffff;
   margin-right: 17px;
+  transition-property: width, height;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.subscribe-button:hover .subscribe-svg {
+  width: 20px;
+  height: 20px;
+}
+
 .subscribe-button {
   background-color: #2196f3;
   width: 200px;
@@ -275,6 +299,9 @@ figure.section-figure {
   justify-content: space-between;
   cursor: pointer;
   padding-left: 28px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-subscribe {
   margin-left: 93px;
@@ -285,9 +312,8 @@ figure.section-figure {
   margin-top: 20px;
 }
 .subscribe-button:hover {
- box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
- transition: box-shadow 0.2s;
-  
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .subscribe-field-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -298,6 +324,12 @@ figure.section-figure {
   align-items: center;
   justify-content: center;
   margin-right: 12px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-field-input:focus-within {
+  border-color: #2196f3;
 }
 .subscribe-input {
   width: 328px;
@@ -324,6 +356,21 @@ figure.section-figure {
 .team-link:nth-child(2) {
   color: #2196f3;
 }
+.team-link:not(:nth-child(2))::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  position: absolute;
+  left: 0px;
+  bottom: -29px;
+  opacity: 0;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scaleX(0);
+}
 .team-link:hover:not(:nth-child(2))::after {
   content: "";
   height: 4px;
@@ -333,6 +380,8 @@ figure.section-figure {
   bottom: -29px;
   left: 0;
   width: 100%;
+  opacity: 1;
+  transform: scaleX(1);
 }
 .section-figure {
   position: relative;
@@ -351,9 +400,11 @@ figure.section-figure {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: 0.3s;
   padding-left: 24px;
   padding-right: 24px;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-li:hover .overlay {
   opacity: 1;

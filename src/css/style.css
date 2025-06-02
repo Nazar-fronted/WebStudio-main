@@ -45,9 +45,8 @@
   margin-top: 24px;
   margin-bottom: 25px;
 }
-header{
+header {
   max-height: 80px;
-  
 }
 .add-class {
   margin-top: 50px;
@@ -113,6 +112,12 @@ button {
   line-height: 1.7;
   text-decoration: none;
   color: #757575;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.div-link-footer:hover {
+  color: #2196f3;
 }
 .div-link:hover {
   color: #2196f3;
@@ -125,6 +130,9 @@ button {
   font-size: 14px;
   text-decoration: none;
   color: black;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover {
   color: #2196f3;
@@ -151,13 +159,14 @@ button {
   text-decoration: none;
   color: #757575;
   letter-spacing: 0.02em;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .flexelement {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  
 }
 .biznes {
   display: flex;
@@ -206,6 +215,13 @@ ul {
   border-radius: 5px;
   cursor: pointer;
   letter-spacing: 0.06em;
+  transition-property: box-shadow, letter-spacing;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.title-button:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.08em;
 }
 footer {
   background-color: #2f303a;
@@ -250,9 +266,6 @@ footer {
 }
 .section-team {
   background-color: #f5f4fa;
-}
-.div-link-footer:hover {
-  color: #2196f3;
 }
 .team-title {
   margin: 0;
@@ -328,10 +341,23 @@ footer {
   align-items: center;
   justify-content: center;
 }
+.section-href {
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-href:hover .section-svg {
+  fill: #ffff;
+}
 .section-href:hover {
   background-color: #2196f3;
 }
-.section-href:hover .section-svg {
+.section-svg {
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-svg:hover {
   fill: #ffff;
 }
 .client-title {
@@ -356,6 +382,9 @@ footer {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-div {
   display: flex;
@@ -365,6 +394,11 @@ footer {
 
 .client-link:hover {
   border-color: #2196f3;
+}
+.client-link .client-svg {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link:hover .client-svg {
   fill: #2196f3;
@@ -407,6 +441,9 @@ footer {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   margin-right: 10px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link:hover {
   background-color: #2196f3;
@@ -458,12 +495,16 @@ footer {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
+
 .close-button {
   position: absolute;
   width: 18px;
   height: 18px;
   right: 10px;
   top: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-button:hover {
   cursor: pointer;
@@ -499,6 +540,9 @@ footer {
   margin-left: 12px;
   margin-right: 12px;
   fill: #212121;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-field-item {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -507,6 +551,9 @@ footer {
   height: 40px;
   display: flex;
   align-items: center;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input {
   border: none;
@@ -529,6 +576,9 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea {
   width: 416px;
@@ -592,7 +642,7 @@ footer {
   align-items: center;
   height: 60px;
 }
-.button-close-modal{
+.button-close-modal {
   border: none;
   appearance: none;
 }
@@ -607,9 +657,13 @@ footer {
   font-family: "Roboto";
   font-weight: bold;
   cursor: pointer;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-form:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .form-field-item:focus-within {
   border-color: #2196f3;
@@ -623,9 +677,13 @@ footer {
 .form-field-item:focus-within .form-field-svg {
   fill: #2196f3;
 }
+.textarea-field:hover {
+  border-color: #2196f3;
+}
 .textarea-field:focus-within {
   border-color: #2196f3;
 }
+
 .subscribe-us {
   font-weight: 700;
   font-family: "Roboto";
@@ -637,6 +695,13 @@ footer {
   height: 24px;
   fill: #ffffff;
   margin-right: 17px;
+  transition-property: width, height;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-button:hover .subscribe-svg {
+  width: 20px;
+  height: 20px;
 }
 .subscribe-button {
   background-color: #2196f3;
@@ -654,11 +719,13 @@ footer {
   justify-content: space-between;
   cursor: pointer;
   padding-left: 28px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-button:hover {
- box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
- transition: box-shadow 0.2s;
-  
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .form-subscribe {
   margin-left: 93px;
@@ -677,6 +744,12 @@ footer {
   align-items: center;
   justify-content: center;
   margin-right: 12px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-field-input:focus-within {
+  border-color: #2196f3;
 }
 .subscribe-input {
   width: 328px;
@@ -686,9 +759,8 @@ footer {
   background-color: transparent;
   color: #ffffff;
 }
-.nav-link{
+.nav-link {
   position: relative;
-  
 }
 .nav-link:nth-child(1)::after {
   content: "";
@@ -699,24 +771,34 @@ footer {
   position: absolute;
   left: -2px;
   bottom: -29px;
-  opacity: 1;
-  
 }
-.nav-link:nth-child(1){
+.nav-link:nth-child(1) {
   color: #2196f3;
 }
-.nav-link:hover:not(:nth-child(1))::after{
+.nav-link:not(:nth-child(1))::after {
   content: "";
-  width: 48px;
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
   position: absolute;
   bottom: -29px;
   left: 0;
+  width: 0;
+  opacity: 0;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scaleX(0);
+}
+.nav-link:hover:not(:nth-child(1))::after {
+  content: "";
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  opacity: 1;
   width: 100%;
-  transition: width 0.3s ease-in-out;
-  
-
-  
+  transform: scaleX(1);
 }
