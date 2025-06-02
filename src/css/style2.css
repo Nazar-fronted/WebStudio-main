@@ -402,12 +402,14 @@ figure.section-figure {
   opacity: 0;
   padding-left: 24px;
   padding-right: 24px;
-  transition-property: opacity;
-  transition-duration: 250ms;
+  transition-property: opacity, transform;
+  transition-duration: 250ms,550ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
 }
 .section-li:hover .overlay {
   opacity: 1;
+  transform: translateY(0%);
 }
 .overlay-content {
   font-family: "Roboto";
