@@ -482,18 +482,25 @@ footer {
   inset: 0;
   background-color: #0000002c;
   backdrop-filter: blur(3px);
+  opacity: 1;
+  transition: opacity 450ms;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, 200%) scale(0.5);
 }
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  transition: transform 0.5s ease;
+ 
 }
 
 .close-button {
@@ -514,6 +521,7 @@ footer {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+   
 }
 .no-scroll {
   overflow: hidden;
