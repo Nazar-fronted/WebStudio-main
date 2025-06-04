@@ -487,6 +487,10 @@ footer {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, 200%) scale(0.5);
+  opacity: 0;
+}
+.backdrop.is-hidden .modal-text{
+  transform: translateY(-100%) scale(0.5);
 }
 .modal {
   position: absolute;
@@ -495,14 +499,23 @@ footer {
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 581px;
+  opacity: 1;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  transition: transform 0.5s ease;
- 
+  transition-property: transform scale, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.modal-text{
+  transform: translateY(0);
+  transform: scale(1);
+   transition-property: transform ,scale;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;
+}
 .close-button {
   position: absolute;
   width: 18px;
@@ -562,6 +575,7 @@ footer {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .input {
   border: none;
