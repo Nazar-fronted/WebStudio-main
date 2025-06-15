@@ -5,6 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Studio</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -33,7 +38,7 @@
   <main>
     <section class="title ">
       <div class="container biznes">
-        <h1 class="title-title">
+        <h1 class="title-title animate__animated animate__flash" >
           ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br />
           ВАШОГО БІЗНЕСУ
         </h1>
@@ -132,8 +137,8 @@
     </section>
     <section class="team">
       <div class="container ">
-        <h2 class="team-title">Чим ми займаємося</h2>
-        <ul class="team-ul">
+        <h2 class="team-title ">Чим ми займаємося</h2>
+        <ul class="team-ul" data-aos="fade-down-left">
           <li class="team-li">
             <img class="div-img" src="./src/img/img_12.png" width="370" height="294" alt="" />
             <p class="team-paragraph">Десктопні додатки</p>
@@ -154,7 +159,7 @@
       <div class="container">
         <h2 class="team-title">Наша Команда</h2>
         <div class="add-class">
-          <figure class="section-figure">
+          <figure class="section-figure" data-aos="zoom-out-up">
             <img class="section-img" src="./src/img/img_4.jpg" width="270" height="260" alt="" />
             <figcaption class="section-figcaption">
               <h5 class="section-title">Ігор Дем'яненко</h5>
@@ -191,7 +196,7 @@
               </li>
             </ul>
           </figure>
-          <figure class="section-figure">
+          <figure class="section-figure" data-aos="zoom-out-down">
             <img class="section-img" src="./src/img/img_5.jpg" width="270" height="260" alt="" />
             <figcaption class="section-figcaption">
               <h5 class="section-title">Ольга Рєпіна</h5>
@@ -228,7 +233,7 @@
               </li>
             </ul>
           </figure>
-          <figure class="section-figure">
+          <figure class="section-figure" data-aos="zoom-out-up">
             <img class="section-img" src="./src/img/img_6.jpg" width="270" height="260" alt="" />
             <figcaption class="section-figcaption">
               <h5 class="section-title">Микола Тарасов</h5>
@@ -265,7 +270,7 @@
               </li>
             </ul>
           </figure>
-          <figure class="section-figure">
+          <figure class="section-figure" data-aos="zoom-out-down">
             <img class="section-img" src="./src/img/img_7.jpg" width="270" height="260" alt="" />
             <figcaption class="section-figcaption">
               <h5 class="section-title">Михайло Єрмаков</h5>
@@ -307,8 +312,8 @@
     </section>
     <section class="client-section">
       <div class="container">
-        <h2 class="client-title">Постійні клієнти</h2>
-        <div class="client-div">
+        <h2 class="client-title" >Постійні клієнти</h2>
+        <div class="client-div"  data-aos="fade-up-left">
           <a class="client-link" href="">
             <svg class="client-svg">
               <use href="./src/img/icons.svg#icon-firstlogo"></use>
@@ -347,7 +352,9 @@
   <footer class="footer">
     <div class="container flexfooter">
       <div class="div-footer">
-        <img class="logo-two" src="./src/img/webStudio_3.png" alt="" />
+        <img class="logo-two" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1s" src="./src/img/webStudio_3.png" alt="" />
         <address class="footer-address">
           м. Київ, пр-т Лесі Українки, 26
         </address>
@@ -387,13 +394,14 @@
       </div>
 
 
-
-
-
     </div>
     </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
 </body>
 
 </html>

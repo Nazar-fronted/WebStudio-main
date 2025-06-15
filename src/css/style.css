@@ -28,6 +28,28 @@
   font-weight: 700;
   src: url(../fonts/Raleway-VariableFont_wght.ttf);
 }
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-4px); 
+  }
+  60% {
+    transform: translateY(-8px); 
+  }
+}
+@keyframes Left {
+  0% {
+    transform: translateX(-100%); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .container {
   width: 1170px;
   padding: 0 15px;
@@ -44,6 +66,8 @@
 .logo {
   margin-top: 24px;
   margin-bottom: 25px;
+  animation: Left 0.5s ease-out forwards;
+  
 }
 header {
   max-height: 80px;
@@ -218,7 +242,9 @@ ul {
   transition-property: box-shadow, letter-spacing;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation: bounce 2s ease-out infinite;
 }
+
 .title-button:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   letter-spacing: 0.08em;
@@ -476,7 +502,9 @@ footer {
   height: 294px;
   position: relative;
   z-index: -1;
+  
 }
+
 .backdrop {
   position: fixed;
   inset: 0;

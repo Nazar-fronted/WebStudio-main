@@ -28,6 +28,27 @@
   font: weight 700;
   src: url(../fonts/Raleway-VariableFont_wght.ttf);
 }
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); 
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes Left {
+  0% {
+    transform: translateX(-100%); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .container {
   width: 1170px;
   padding: 0 15px;
@@ -51,6 +72,9 @@ body {
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
+}
+.logo{
+   animation: Left 0.5s ease-out forwards;
 }
 
 .class-sub {
@@ -93,7 +117,10 @@ body {
   transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+
 }
+
 .address-sub-footer {
   font-weight: 500;
   font-size: 14px;
@@ -168,7 +195,7 @@ ul {
 .address-sub:not(:last-child) {
   margin-right: 50px;
 }
-.class-sub:not(:last-child) {
+.class-sub{
   margin-left: 8px;
 }
 .section-li {
@@ -176,7 +203,9 @@ ul {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation: pulse 0.5s ease 1 alternate; 
 }
+
 .section {
   display: flex;
   align-content: center;
